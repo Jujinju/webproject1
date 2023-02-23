@@ -46,7 +46,7 @@ body{background-color: #eee;}
 
 /* header__________________ */
 .utilMenu{
-  width: 1400px;
+  width: 1200px;
   margin: auto;
   overflow: hidden;
 }
@@ -231,25 +231,23 @@ main{
   margin-bottom: 50px;
 }
 #guide h2 a{
-  color: #fff;
+  color: #ccc;
   font-size: 16px;
   font-weight: normal;
   text-decoration: none;
-  opacity: 0.6;
   transition: 0.3s;
 }
-#guide h2:hover a{opacity: 1;}
+#guide h2 a:hover{color: red;opacity: 1;}
 #guide h3 {text-align: right;margin-bottom: 30px;}
 #guide h3 a{
-  color: #fff;
+  display: inline;
+  color: #ccc;
   text-decoration: none;
   font-size: 16px;
   font-weight: normal;
-  opacity: 0.6;
   transition: 0.3s;
-  
 }
-#guide h3:hover a{opacity: 1;}
+#guide h3 a:hover{color: red;}
 .tabimg{
   width: 1020px;
   height: auto;
@@ -287,7 +285,9 @@ main{
   font-size: 30px;
 }
 .introduce h3{
+  font-size: 16px;
   font-weight: normal;
+  color: #444;
   margin: 10px 0;
 }
 .info{
@@ -298,6 +298,7 @@ main{
   border-radius: 20px;
   margin: 80px 80px 0 0;
   overflow: hidden;
+  cursor: pointer;
 }
 .info img{
   width: 320px;
@@ -328,8 +329,9 @@ main{
 }
 .trainer_text p{
   display: block;
-  font-size: 16px;
-  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  color: #ccc;
   margin: 20px;
   line-height: 35px;
   font-weight: bold;
@@ -363,17 +365,16 @@ main{
   font-weight: normal;
   margin: 10px 0;
 }
-.introduce_fashion .more{
-  font-weight: normal;
+.introduce_fashion h3:nth-of-type(2){text-align: right;margin-bottom: 30px;}
+.introduce_fashion a{
+  display: inline;
+  color: #ccc;
+  text-decoration: none;
   font-size: 16px;
-  text-align: right;
-  margin-top: 30px;
-  cursor: pointer;
-  transition: 0.5s;
+  font-weight: normal;
+  transition: 0.3s;
 }
-.introduce_fashion .more:hover{
-  color: red;
-}
+.introduce_fashion h3 a:hover{color: red;}
 .fashion{
   display: flex;
   justify-content: center;
@@ -413,7 +414,7 @@ main{
 }
 
 .clothes p{
-  color: #fff;
+  color: #ccc;
   margin-left: 10px;
 }
 .clothes em{
