@@ -1,0 +1,430 @@
+  @import url(common.css);
+
+body{background-color: #eee;}
+/* top_____________________ */
+.top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+}
+.top a{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../image/top.png) no-repeat;
+  transform: scale(1.5);
+  transition: 0.35s;
+}
+.top a:hover{background-image: url(../image/top_on.png);}
+
+
+/* header__________________ */
+.utilMenu{
+  width: 1400px;
+  margin: auto;
+  overflow: hidden;
+}
+.utilLogo img{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 0 50px 0 0px;
+}
+.utilLogo:nth-child(1){margin-left: 50px;}
+.utilMenu span{float: right;font-size: 14px;}
+.utilMenu span a{
+  display: inline-block;
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+  line-height: 35px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+.utilMenu span a:hover{
+  color: crimson;
+}
+
+
+header{
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+}
+nav{
+  width: 1400px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.gnb{display: flex;}
+.gnb li{margin: 0 30px;list-style: none;}
+.gnb li a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.gnb:hover a{opacity: 0.3;}
+.gnb a:hover{opacity: 1;}
+/* main_____________________ */
+@keyframes movebg{
+  0%{background-position: 0 center;}
+  100%{background-position: -4200px center;}
+}
+@keyframes visual_ani{
+  0%{left: -30%;
+    bottom: -15%;
+    opacity: 20%;
+  }
+  50%{opacity: 75%;}
+  100%{
+    transform: scale(1.2);
+    left: 55%;
+    bottom: 0%;
+  }
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background: url(../image/streat1.png) 0 center / 1400px repeat-x;
+  animation: movebg 15s linear infinite;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.visual{
+  position: relative;
+  width: 1400px;
+  height: 800px;
+  /* box-sizing: border-box; */
+}
+.visual img{
+  position: absolute;
+  width: 600px;
+  height: auto;
+  animation: visual_ani 1s ease-in-out both;
+}
+.visual h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 50px;
+  line-height: 100px;
+}
+/* section__________________ */
+
+/* 앱 다운로드 */
+
+#download{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.headline{
+  position: relative;
+  width: 1400px;
+  height: 550px;
+  margin-top: 50px;
+}
+.headline h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+.headline p{
+  font-size: 15px;
+}
+.download_link{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.download_logo1,
+.download_logo2{
+  width: 200px;
+  height: 200px;
+}
+.download_logo2{
+  margin-left: 60px;
+}
+.download_logo1 img,
+.download_logo2 img{
+  width: 150px;
+  height: 150px;
+}
+.download_logo1 a,
+.download_logo2 a{
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  border-radius: 30px;
+  line-height: 35px;
+  text-decoration: none;
+  font-size: 13px;
+  background-color: #000;
+  color: #fff;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.download_logo1:hover a,
+.download_logo2:hover a{
+  background-color: rgba(0,0,0, 0.2);
+  color: #111;
+  font-weight: bold;
+}
+
+/* 운동 가이드 */
+#guide{
+  width: 100%;
+  height: 1000px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#guide h2{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+#guide h2 a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+#guide h2:hover a{opacity: 1;}
+#guide h3 {text-align: right;margin-bottom: 30px;}
+#guide h3 a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.6;
+  transition: 0.3s;
+  
+}
+#guide h3:hover a{opacity: 1;}
+.tabimg{
+  width: 1020px;
+  height: auto;
+  margin-bottom: 60px;
+}
+.tabimg img{
+  width: 250px;
+  height: 250px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.tabimg img:hover{
+  transform: scale(1.5);
+  border-radius: 20px;
+}
+
+
+/* 트레이너 소개 */
+
+
+#trainer{
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.introduce{
+  width: 1200px;
+  position: absolute;
+  top: 8%;
+}
+.introduce h2{
+  font-size: 30px;
+}
+.introduce h3{
+  font-weight: normal;
+  margin: 10px 0;
+}
+.info{
+  position: relative;
+  width: 320px;
+  height: 480px;
+  top: 5%;
+  border-radius: 20px;
+  margin: 80px 80px 0 0;
+  overflow: hidden;
+}
+.info img{
+  width: 320px;
+  height: 480px;
+  transition: 0.5s;
+}
+.trainer_text{
+  position: absolute;
+  top: 0;
+  right: 100%;
+  color: #fff;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  padding: 100px 20px 20px;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.info:hover .trainer_text{
+  right: 0;
+  background: rgba(0,0,0, 0.6);
+}
+
+.trainer_text h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+.trainer_text p{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  margin: 20px;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+/* 패션 스타일 */
+
+#style{
+  width: 100%;
+  height: 1300px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.introduce_fashion{
+  width: 1200px;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+}
+.introduce_fashion h2{
+  font-size: 30px;
+  margin-top: 50px;
+}
+.introduce_fashion h3{
+  font-weight: normal;
+  margin: 10px 0;
+}
+.introduce_fashion .more{
+  font-weight: normal;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 50px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.introduce_fashion .more:hover{
+  opacity: 1;
+}
+.fashion{
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: auto;
+}
+.clothes{
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 150px;
+}
+.show1{
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 0 10px;
+  opacity: 1;
+}
+.show2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.show2:hover{opacity: 1;}
+.clothes h2{
+  width: inherit;
+  height: 80px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.clothes p{
+  color: #fff;
+  margin-left: 10px;
+}
+.clothes em{
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 15px;
+  color: #fff;
+}
+/* footer____________________ */
+
+footer{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  height: inherit;
+  text-align: left;
+  line-height: 10px;
+}
+.footer_in img{
+  width: 100px;
+  height: 100px;
+  margin-right: 200px;
+}
+.footer_in div p{
+  font-weight: bold;
+  color: #000;
+}
+.footer_in div address{
+  font-style: normal;
+  color: #555;
+}
