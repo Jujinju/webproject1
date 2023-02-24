@@ -1,5 +1,7 @@
   @import url(common.css);
 
+html{scroll-behavior: smooth;}
+
 body{background-color: #eee;}
 /* top_____________________ */
 @keyframes ani_op{
